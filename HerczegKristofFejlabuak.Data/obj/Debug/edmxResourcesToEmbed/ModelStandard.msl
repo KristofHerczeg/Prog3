@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DataBaseModelStoreContainer" CdmEntityContainer="DBEntities">
+    <EntitySetMapping Name="classification">
+      <EntityTypeMapping TypeName="DataBaseModel.classification">
+        <MappingFragment StoreEntitySet="classification">
+          <ScalarProperty Name="subclass_name" ColumnName="subclass_name" />
+          <ScalarProperty Name="order_" ColumnName="order_" />
+          <ScalarProperty Name="family" ColumnName="family" />
+          <ScalarProperty Name="genus_name" ColumnName="genus_name" />
+          <ScalarProperty Name="deep_able" ColumnName="deep_able" />
+          <ScalarProperty Name="cthulh_aproved" ColumnName="cthulh_aproved" />
+          <ScalarProperty Name="special_apparance" ColumnName="special_apparance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="species">
+      <EntityTypeMapping TypeName="DataBaseModel.species">
+        <MappingFragment StoreEntitySet="species">
+          <ScalarProperty Name="species_name" ColumnName="species_name" />
+          <ScalarProperty Name="felfedezes" ColumnName="felfedezes" />
+          <ScalarProperty Name="megjelenes" ColumnName="megjelenes" />
+          <ScalarProperty Name="genus_name" ColumnName="genus_name" />
+          <ScalarProperty Name="atlagos_meret" ColumnName="atlagos_meret" />
+          <ScalarProperty Name="legnagyobb_meret" ColumnName="legnagyobb_meret" />
+          <ScalarProperty Name="cute" ColumnName="cute" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="subclass">
+      <EntityTypeMapping TypeName="DataBaseModel.subclass">
+        <MappingFragment StoreEntitySet="subclass">
+          <ScalarProperty Name="subclass_name" ColumnName="subclass_name" />
+          <ScalarProperty Name="belso_szavazas_eredmenye" ColumnName="belso_szavazas_eredmenye" />
+          <ScalarProperty Name="megtalalas_eve" ColumnName="megtalalas_eve" />
+          <ScalarProperty Name="external_shell" ColumnName="external_shell" />
+          <ScalarProperty Name="kihalt" ColumnName="kihalt" />
+          <ScalarProperty Name="megjelenes_idoszaka" ColumnName="megjelenes_idoszaka" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

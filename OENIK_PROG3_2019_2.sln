@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerczegKristofFejlabuak", "HerczegKristofFejlabuak\HerczegKristofFejlabuak.csproj", "{2E17D2D9-C581-483F-9573-9CDBCD877CE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F05786D9-F86D-42B3-BCE8-14918C93F6AB}"
+	ProjectSection(SolutionItems) = preProject
+		oenik.ruleset = oenik.ruleset
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerczegKristofFejlabuak.Data", "HerczegKristofFejlabuak.Data\HerczegKristofFejlabuak.Data.csproj", "{07BBB597-CE6C-46F7-845C-E29823D90495}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerczegKristofFejlabuak.Repository", "HerczegKristofFejlabuak.Repository\HerczegKristofFejlabuak.Repository.csproj", "{A2068C0D-08CB-4609-ABAB-3D99790DDF36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerczegKristofFejlabuak.Logic", "HerczegKristofFejlabuak.Logic\HerczegKristofFejlabuak.Logic.csproj", "{DB92E921-DDD5-4745-AABD-400C690E8687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerczegKristofFejlabuak.Logic.Test", "HerczegKristofFejlabuak.Logic.Test\HerczegKristofFejlabuak.Logic.Test.csproj", "{36B203DF-2448-4742-893B-4340776C3DC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E17D2D9-C581-483F-9573-9CDBCD877CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E17D2D9-C581-483F-9573-9CDBCD877CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E17D2D9-C581-483F-9573-9CDBCD877CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E17D2D9-C581-483F-9573-9CDBCD877CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07BBB597-CE6C-46F7-845C-E29823D90495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07BBB597-CE6C-46F7-845C-E29823D90495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07BBB597-CE6C-46F7-845C-E29823D90495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07BBB597-CE6C-46F7-845C-E29823D90495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2068C0D-08CB-4609-ABAB-3D99790DDF36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2068C0D-08CB-4609-ABAB-3D99790DDF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2068C0D-08CB-4609-ABAB-3D99790DDF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2068C0D-08CB-4609-ABAB-3D99790DDF36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB92E921-DDD5-4745-AABD-400C690E8687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB92E921-DDD5-4745-AABD-400C690E8687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB92E921-DDD5-4745-AABD-400C690E8687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB92E921-DDD5-4745-AABD-400C690E8687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B203DF-2448-4742-893B-4340776C3DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B203DF-2448-4742-893B-4340776C3DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B203DF-2448-4742-893B-4340776C3DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B203DF-2448-4742-893B-4340776C3DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6CCC453-3FFC-4B78-AB0D-AB212B8FAF05}
+	EndGlobalSection
+EndGlobal

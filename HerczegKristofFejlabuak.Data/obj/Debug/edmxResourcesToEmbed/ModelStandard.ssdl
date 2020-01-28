@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataBaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="classification">
+    <Key>
+      <PropertyRef Name="genus_name" />
+    </Key>
+    <Property Name="subclass_name" Type="varchar" MaxLength="100" />
+    <Property Name="order_" Type="varchar" MaxLength="100" />
+    <Property Name="family" Type="varchar" MaxLength="100" />
+    <Property Name="genus_name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="deep_able" Type="tinyint" />
+    <Property Name="cthulh_aproved" Type="tinyint" />
+    <Property Name="special_apparance" Type="varchar" MaxLength="120" />
+  </EntityType>
+  <EntityType Name="species">
+    <Key>
+      <PropertyRef Name="species_name" />
+    </Key>
+    <Property Name="species_name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="felfedezes" Type="smallint" />
+    <Property Name="megjelenes" Type="varchar" MaxLength="20" />
+    <Property Name="genus_name" Type="varchar" MaxLength="100" />
+    <Property Name="atlagos_meret" Type="varchar" MaxLength="100" />
+    <Property Name="legnagyobb_meret" Type="varchar" MaxLength="120" />
+    <Property Name="cute" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="subclass">
+    <Key>
+      <PropertyRef Name="subclass_name" />
+    </Key>
+    <Property Name="subclass_name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="belso_szavazas_eredmenye" Type="int" />
+    <Property Name="megtalalas_eve" Type="smallint" />
+    <Property Name="external_shell" Type="tinyint" />
+    <Property Name="kihalt" Type="tinyint" />
+    <Property Name="megjelenes_idoszaka" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <Association Name="genus_name_fk">
+    <End Role="classification" Type="Self.classification" Multiplicity="0..1" />
+    <End Role="species" Type="Self.species" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="classification">
+        <PropertyRef Name="genus_name" />
+      </Principal>
+      <Dependent Role="species">
+        <PropertyRef Name="genus_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="subclass_name_fk">
+    <End Role="subclass" Type="Self.subclass" Multiplicity="0..1" />
+    <End Role="classification" Type="Self.classification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subclass">
+        <PropertyRef Name="subclass_name" />
+      </Principal>
+      <Dependent Role="classification">
+        <PropertyRef Name="subclass_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DataBaseModelStoreContainer">
+    <EntitySet Name="classification" EntityType="Self.classification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="species" EntityType="Self.species" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="subclass" EntityType="Self.subclass" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="genus_name_fk" Association="Self.genus_name_fk">
+      <End Role="classification" EntitySet="classification" />
+      <End Role="species" EntitySet="species" />
+    </AssociationSet>
+    <AssociationSet Name="subclass_name_fk" Association="Self.subclass_name_fk">
+      <End Role="subclass" EntitySet="subclass" />
+      <End Role="classification" EntitySet="classification" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

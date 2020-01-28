@@ -1,0 +1,14 @@
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\bin\Debug\HerczegKristofFejlabuak.Data.dll
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\bin\Debug\HerczegKristofFejlabuak.Data.pdb
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\obj\Debug\HerczegKristofFejlabuak.Data.csproj.CoreCompileInputs.cache
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\obj\Debug\HerczegKristofFejlabuak.Data.dll
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\obj\Debug\HerczegKristofFejlabuak.Data.pdb
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\bin\Debug\DataBase.mdf
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\bin\Debug\DataBase_log.ldf
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\bin\Debug\HerczegKristofFejlabuak.Data.dll.config
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\bin\Debug\EntityFramework.dll
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\bin\Debug\EntityFramework.xml
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\obj\Debug\HerczegKristofFejlabuak.Data.csproj.CopyComplete
+C:\Users\Kristóf\Documents\oenik_prog3_2019_2_ff9d96\CSHARP\OENIK_PROG3_2019_2_FF9D96\HerczegKristofFejlabuak.Data\obj\Debug\HerczegKristofFejlabuak.Data.csprojAssemblyReference.cache

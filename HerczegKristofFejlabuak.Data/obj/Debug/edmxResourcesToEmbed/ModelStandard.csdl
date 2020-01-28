@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataBaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="classification">
+    <Key>
+      <PropertyRef Name="genus_name" />
+    </Key>
+    <Property Name="subclass_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="order_" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="family" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="genus_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="deep_able" Type="Byte" />
+    <Property Name="cthulh_aproved" Type="Byte" />
+    <Property Name="special_apparance" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="species" Relationship="Self.genus_name_fk" FromRole="classification" ToRole="species" />
+    <NavigationProperty Name="subclass" Relationship="Self.subclass_name_fk" FromRole="classification" ToRole="subclass" />
+  </EntityType>
+  <EntityType Name="species">
+    <Key>
+      <PropertyRef Name="species_name" />
+    </Key>
+    <Property Name="species_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="felfedezes" Type="Int16" />
+    <Property Name="megjelenes" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="genus_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="atlagos_meret" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="legnagyobb_meret" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="cute" Type="Byte" />
+    <NavigationProperty Name="classification" Relationship="Self.genus_name_fk" FromRole="species" ToRole="classification" />
+  </EntityType>
+  <EntityType Name="subclass">
+    <Key>
+      <PropertyRef Name="subclass_name" />
+    </Key>
+    <Property Name="subclass_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="belso_szavazas_eredmenye" Type="Int32" />
+    <Property Name="megtalalas_eve" Type="Int16" />
+    <Property Name="external_shell" Type="Byte" />
+    <Property Name="kihalt" Type="Byte" />
+    <Property Name="megjelenes_idoszaka" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="classification" Relationship="Self.subclass_name_fk" FromRole="subclass" ToRole="classification" />
+  </EntityType>
+  <Association Name="genus_name_fk">
+    <End Role="classification" Type="Self.classification" Multiplicity="0..1" />
+    <End Role="species" Type="Self.species" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="classification">
+        <PropertyRef Name="genus_name" />
+      </Principal>
+      <Dependent Role="species">
+        <PropertyRef Name="genus_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="subclass_name_fk">
+    <End Role="subclass" Type="Self.subclass" Multiplicity="0..1" />
+    <End Role="classification" Type="Self.classification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subclass">
+        <PropertyRef Name="subclass_name" />
+      </Principal>
+      <Dependent Role="classification">
+        <PropertyRef Name="subclass_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="classification" EntityType="Self.classification" />
+    <EntitySet Name="species" EntityType="Self.species" />
+    <EntitySet Name="subclass" EntityType="Self.subclass" />
+    <AssociationSet Name="genus_name_fk" Association="Self.genus_name_fk">
+      <End Role="classification" EntitySet="classification" />
+      <End Role="species" EntitySet="species" />
+    </AssociationSet>
+    <AssociationSet Name="subclass_name_fk" Association="Self.subclass_name_fk">
+      <End Role="subclass" EntitySet="subclass" />
+      <End Role="classification" EntitySet="classification" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
